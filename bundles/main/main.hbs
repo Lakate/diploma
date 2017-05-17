@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="{{ meta.charset }}">
+        <title>{{ page.title }}</title>
+        <meta name="description" content="{{ meta.description }}">
+
+        {{#if isDev}}
+            <link rel="stylesheet" href="/main.css">
+        {{else}}
+            <link rel="stylesheet" href="//urfu2015-notes.surge.sh/main.css">
+        {{/if}}
+    </head>
+    <body>
+        <p>{{{ message }}}</p>
+        {{> header/header }}
+
+        {{> footer/footer }}
+
+        {{#if isDev}}
+            <script src="/main.js"></script>
+        {{else}}
+            <script src="//urfu2015-notes.surge.sh/main.js"></script>
+        {{/if}}
+    </body>
+</html>

@@ -1,0 +1,42 @@
+{
+  "name": "diploma",
+  "version": "1.0.0",
+  "description": "diploma proect - intranet",
+  "main": "index.js",
+  "scripts": {
+    "build": "webpack",
+    "build:dev": "webpack --config webpack.dev.config.js",
+    "deploy:dynamic": "git push heroku master",
+    "deploy:static": "surge -p ./public -d hackathonteam2.surge.sh",
+    "deploy": "npm-run-all deploy:*",
+    "dev": "webpack --config webpack.dev.config.js && npm run start:dev",
+    "env:auth0": "heroku config:get AUTH0_CLIENTSECRET --app yahackteam2 -s > config/auth.txt",
+    "env:cloudinary": "heroku config:get CLOUDINARY_URL --app yahackteam2 -s > config/cloudinary.txt",
+    "env": "npm-run-all env:*",
+    "filldb": "node --harmony scripts/fillDB.js",
+    "lint": "npm run lint:css & npm run lint:js",
+    "lint:css": "stylelint **/*.css",
+    "lint:js": "jscs .",
+    "precommit": "npm run test & npm run lint",
+    "start": "node --harmony app.js",
+    "start:dev": "node --harmony app.js --NODE_ENV=development",
+    "test": "mocha --harmony --recursive tests/ --STATUS=testing"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Lakate/diploma.git"
+  },
+  "author": "Lakate",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Lakate/diploma/issues"
+  },
+  "homepage": "https://github.com/Lakate/diploma#readme",
+  "dependencies": {
+    "express": "^4.15.3",
+    "hbs": "^4.0.1"
+  },
+  "devDependencies": {
+    "jscs": "^3.0.7"
+  }
+}
