@@ -1,7 +1,5 @@
 .DS_Store
 .idea
-/config/auth.txt
-/config/cloudinary.txt
 node_modules
 npm-debug.log
 public/

@@ -1,7 +1,18 @@
+'use strict';
+
+const Promise = require('bluebird');
+const fs = require('fs');
+const layouts = require('handlebars-layouts');
+
+const handlebars = require('hbs').handlebars;
+handlebars.registerHelper(layouts(handlebars));
+handlebars.registerPartial('base', fs.readFileSync('./bundles/base.hbs', 'utf8'));
+
 exports.index = (req, res) => {
     const data = {
-        message: 'Hello, World'
+        currentCity: 'Екатеринбург'
     };
+
     res.render('main/main', Object.assign(data, req.commonData));
 };
 

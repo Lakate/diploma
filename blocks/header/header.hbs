@@ -1,1 +1,36 @@
-<header></header>
+<header class="page-header">
+    <nav class="navbar navbar-default">
+        <div class="container navbar-container">
+            <div class="btn-group nav-menu">
+                <ul class="nav-menu-list">
+                    <li><div class="header-logo"></div></li>
+                    <li><a href="/">Главная</a></li>
+                    <li><a href="/">Компании</a></li>
+                    <li><a href="/">Общение</a></li>
+                    <li><a href="/">HR-сервисы</a></li>
+                    <li><a href="/">Мой профиль</a></li>
+                </ul>
+            </div>
+            <div class="quest-search">
+                <form class="quest-search__form" method="get" action="/search">
+                    {{#if query}}
+                        <input name="query" class="quest-search__input noSwipe"
+                               placeholder="Поиск" value="{{query}}" required
+                        >
+                    {{else}}
+                        <input name="query" class="quest-search__input noSwipe"
+                               placeholder="Поиск" required
+                        >
+                    {{/if}}
+                    <button class="btn btn-xs btn-default quest-search__submit">&#128270;</button>
+                </form>
+            </div>
+            <div class="btn-group city-select">
+                <button class="btn btn-link ico-msq header-city-button" data-toggle="dropdown" type="button">
+                    <i class="glyphicon glyphicon-map-marker"></i>
+                    <span class="city-select__current-city">{{ currentCity }} </span>
+                </button>
+            </div>
+        </div>
+    </nav>
+</header>

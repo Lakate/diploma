@@ -5,11 +5,11 @@
         <title>{{ page.title }}</title>
         <meta name="description" content="{{ meta.description }}">
 
-        {{#if isDev}}
+        {{!--{{#if isDev}}--}}
             <link rel="stylesheet" href="/main.css">
-        {{else}}
-            <link rel="stylesheet" href="//urfu2015-notes.surge.sh/main.css">
-        {{/if}}
+        {{!--{{else}}--}}
+            {{!--<link rel="stylesheet" href="//diploma.surge.sh/main.css">--}}
+        {{!--{{/if}}--}}
     </head>
     <body>
         <p>{{{ message }}}</p>
@@ -20,7 +20,7 @@
         {{#if isDev}}
             <script src="/main.js"></script>
         {{else}}
-            <script src="//urfu2015-notes.surge.sh/main.js"></script>
+            <script src="//diploma.surge.sh/main.js"></script>
         {{/if}}
     </body>
 </html>
