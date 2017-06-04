@@ -40,12 +40,12 @@ exports.profile = (req, res) => {
   res.send(template(Object.assign(data, req.commonData)))
 }
 
-// exports.rel = (req, res) => {
-//   const template = handlebars.compile(fs.readFileSync('./bundles/relationship/relationship.hbs', 'utf8'))
-//   const data = {
-//     currentCity: 'Екатеринбург'
-//   }
-//   res.send(template(Object.assign(data, req.commonData)))
-// }
+exports.rel = (req, res) => {
+  const template = handlebars.compile(fs.readFileSync('./bundles/relationship/relationship.hbs', 'utf8'))
+  const data = {
+    currentCity: 'Екатеринбург'
+  }
+  res.send(template(Object.assign(data, req.commonData)))
+}
 
 exports.error404 = (req, res) => res.sendStatus(404)

@@ -1,0 +1,13 @@
+{{#extend "base"}}
+    {{#content "head" mode="append"}}
+        <link rel="stylesheet" href="/relationship.css">
+    {{/content}}
+
+    {{#content "body"}}
+        {{> relationship/relationship }}
+    {{/content}}
+
+    {{#content "scripts" mode="append"}}
+        <script src="/relationship.js"></script>
+    {{/content}}
+{{/extend}}

@@ -12,7 +12,8 @@ module.exports = {
     main: './main/main.js',
     profile: './profile/profile.js',
     hr: './hr/hr.js',
-    companies: './companies/companies.js'
+    companies: './companies/companies.js',
+    relationship: './relationship/relationship.js'
   },
   devtool: 'source-map',
   output: {

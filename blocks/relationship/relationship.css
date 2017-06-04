@@ -1,0 +1,61 @@
+#rel
+{
+    border-bottom: 1px solid red;
+}
+
+.rel-menu,
+.blog-menu
+{
+    width: 90%;
+    display: flex;
+    justify-content: space-around;
+    margin: 20px;
+    font-size: 20px;
+}
+
+.blog-button,
+.new-post-button
+{
+    border-bottom: 1px solid red;
+}
+
+.blog-new-post
+{
+    width: 90%;
+    margin: 50px auto;
+}
+
+.question
+{
+    display: flex;
+    justify-content: center;
+    margin: 15px;
+}
+
+.title,
+.theme,
+.text
+{
+    width: 500px;
+    height: 20px;
+    margin-left: 10px;
+}
+
+.theme
+{
+    margin-left: 40px;
+}
+
+.text
+{
+    height: 200px;
+    margin-left: 30px;
+}
+
+.send-post
+{
+    margin: 30px 63%;
+    display: block;
+    height: 39px;
+    font-size: 20px;
+}
