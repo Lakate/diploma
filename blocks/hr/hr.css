@@ -1,0 +1,22 @@
+#hr
+{
+    border-bottom: 1px solid red;
+}
+
+.hr-menu
+{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    width: 70%;
+    margin: 0 auto;
+    margin-top: 100px;
+}
+
+.hr-menu .button
+{
+    padding: 30px;
+    margin: 20px;
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+}

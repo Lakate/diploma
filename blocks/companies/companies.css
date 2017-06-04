@@ -1,0 +1,36 @@
+@import "../works/works.css";
+
+#companies
+{
+    border-bottom: 1px solid red;
+}
+
+.companies
+{
+    display: flex;
+}
+
+.companies .menu
+{
+    min-width: 20%;
+}
+
+.companies .menu .list
+{
+    display: flex;
+    flex-direction: column;
+
+    list-style-type: none;
+    text-decoration: none;
+}
+
+.companies .menu .list li
+{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.title h2
+{
+    margin-bottom: 10px;
+}

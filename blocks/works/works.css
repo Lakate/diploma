@@ -1,0 +1,40 @@
+.work
+{
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+    padding: 10px;
+    margin-right: 10px;
+}
+
+.work + .work
+{
+    margin-top: 20px;
+}
+
+.work:last-of-type
+{
+    margin-bottom: 10px;
+}
+
+.work-wrapper
+{
+    display: flex;
+}
+
+.work-wrapper .number
+{
+    margin-right: 10px;
+    align-self: center;
+}
+
+.work-wrapper .description p
+{
+    margin: 0;
+}
+
+.resume
+{
+    margin-top: 30px;
+    position: relative;
+    right: 0;
+    left: 88%;
+}

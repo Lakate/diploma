@@ -4,9 +4,14 @@
     justify-content: space-around;
 }
 
-.main_page_links ul
+.main_page_links .column
 {
     list-style-type: none;
     text-decoration: none;
+
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    height: 400px;
 }
 
