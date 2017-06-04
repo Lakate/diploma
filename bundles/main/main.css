@@ -1,4 +1,6 @@
 @import "../../blocks/header/header.css";
+@import "../../blocks/main_page_links/main_page_links.css";
+@import "../../blocks/footer/footer.css";
 
 html
 {
@@ -8,7 +10,6 @@ html
 
 body
 {
-    margin-bottom: 80px;
     background-color: #fff;
 }
 

@@ -1,0 +1,39 @@
+.footer
+{
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    right: 10px;
+    padding: 10px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    background-color: #fff;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.6);
+}
+
+.footer__share,
+.footer__text,
+.footer-address
+{
+    flex-basis: 33%;
+}
+
+.footer__text
+{
+    text-align: center;
+}
+
+.footer-address
+{
+    text-align: right;
+}
+
+.footer-address__link
+{
+    color: #666;
+    display: block;
+    height: 25px;
+    width: 100%;
+    background: url("./mail.png") no-repeat center right;
+}

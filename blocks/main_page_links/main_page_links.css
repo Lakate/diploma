@@ -1,0 +1,12 @@
+.main_page_links
+{
+    display: flex;
+    justify-content: space-around;
+}
+
+.main_page_links ul
+{
+    list-style-type: none;
+    text-decoration: none;
+}
+

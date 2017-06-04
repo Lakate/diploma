@@ -1,0 +1,13 @@
+{{#extend "base"}}
+    {{#content "head" mode="append"}}
+        <link rel="stylesheet" href="/hr.css">
+    {{/content}}
+
+    {{#content "body"}}
+        {{> hr/hr }}
+    {{/content}}
+
+    {{!--{{#content "scripts" mode="append"}}
+        <script src="/hr.js"></script>
+    {{/content}}--}}
+{{/extend}}

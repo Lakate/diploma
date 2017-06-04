@@ -1,0 +1,13 @@
+{{#extend "base"}}
+    {{#content "head" mode="append"}}
+        <link rel="stylesheet" href="/companies.css">
+    {{/content}}
+
+    {{#content "body"}}
+         {{> companies/companies }}
+    {{/content}}
+
+    {{!--{{#content "scripts" mode="append"}}
+        <script src="/companies.js"></script>
+    {{/content}}--}}
+{{/extend}}

@@ -1,0 +1,13 @@
+{{#extend "base"}}
+    {{#content "head" mode="append"}}
+        <link rel="stylesheet" href="/profile.css">
+    {{/content}}
+
+    {{#content "body"}}
+        {{> profile/profile }}
+    {{/content}}
+
+    {{!--{{#content "scripts" mode="append"}}
+        <script src="/profile.js"></script>
+    {{/content}}--}}
+{{/extend}}

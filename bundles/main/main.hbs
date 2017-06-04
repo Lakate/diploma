@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+{{!--<!DOCTYPE html>
 <html lang="ru">
     <head>
         <meta charset="{{ meta.charset }}">
@@ -10,7 +10,7 @@
         {{!--{{else}}--}}
             {{!--<link rel="stylesheet" href="//diploma.surge.sh/main.css">--}}
         {{!--{{/if}}--}}
-    </head>
+    {{!--</head>
     <body>
         <p>{{{ message }}}</p>
         {{> header/header }}
@@ -23,4 +23,18 @@
             <script src="//diploma.surge.sh/main.js"></script>
         {{/if}}
     </body>
-</html>
+</html>--}}
+
+{{#extend "base"}}
+    {{#content "header"}}
+        {{> header/header }}
+    {{/content}}
+
+    {{#content "body"}}
+        {{> main_page_links/main_page_links }}
+    {{/content}}
+
+    {{#content "footer"}}
+        {{> footer/footer }}
+    {{/content}}
+{{/extend}}

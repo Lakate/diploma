@@ -41,11 +41,11 @@ app.use((req, res, next) => {
     let user = req.user ? req.user._json : undefined;
     req.commonData = {
         meta: {
-            description: 'Hahaton',
+            description: 'diploma',
             charset: 'utf-8'
         },
         page: {
-            title: 'PhotoQuest'
+            title: 'Регинас'
         },
         user: user,
         currentCity: 'Екатеринбург',
@@ -54,7 +54,8 @@ app.use((req, res, next) => {
             host: req.get('host')
         }),
         common: startBlocksData,
-        publicHost: (argv.NODE_ENV === 'development') ? '' : '//diploma.surge.sh',
+        publicHost: '',
+            // (argv.NODE_ENV === 'development') ? '' : '//diploma.surge.sh',
         errors: []
     };
     next();
@@ -69,43 +70,3 @@ module.exports = registerPartials(path.join(__dirname, 'blocks'))
         return app;
     })
     .catch(error => console.error(error));
-
-// 'use strict';
-
-// const express = require('express');
-// const app = express();
-
-// const path = require('path');
-
-// const hbs = require('hbs');
-
-// const viewsDir = path.join(__dirname, 'bundles');
-
-// app.set('views', viewsDir);
-// app.set('view engine', 'hbs');
-
-// hbs.registerPartials(path.join(__dirname, 'blocks'));
-
-// app.set('port', (process.env.PORT || 8080));
-
-// app.use((req, res, next) => {
-//     req.commonData = {
-//         meta: {
-//             description: 'Hahaton',
-//             charset: 'utf-8'
-//         },
-//         page: {
-//             title: 'PhotoQuest'
-//         },
-//         isDev: true
-//     };
-
-//     next();
-// });
-
-// require('./routes.js')(app);
-
-// app.listen(app.get('port'),
-//     () => console.log(`Listening on port ${app.get('port')}`));
-
-// module.exports = app;
