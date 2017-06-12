@@ -43,3 +43,21 @@
     right: 0;
     left: 88%;
 }
+
+.sended-resume
+{
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+    padding: 10px;
+    margin: 0 auto;
+    width: 300px;
+    height: 100px;
+    text-align: center;
+    z-index: 10;
+    position: absolute;
+    top: 300px;
+    left: 50%;
+    background: #fff;
+    margin-left: -150px;
+
+    display: none;
+}
