@@ -100,6 +100,13 @@
     margin-bottom: 10px;
 }
 
+.card .doc-title p,
+.card .key
+{
+    display: inline-block;
+    margin: 0;
+}
+
 .card .documents
 {
     padding-left: 0;
@@ -121,19 +128,37 @@
 .work-medal,
 .hr-medal
 {
-    background-size: cover !important;
-    width: 60px;
-    height: 60px;
+    width: 80px;
+    height: 80px;
 
     display: inline-block;
+
+    background: url(kubok.jpg) no-repeat center left;
+
+    border-radius: 40px;
 }
 
 .work-medal
 {
-    background: url(talk.jpg) no-repeat center left;
+    background-position: -52px -281px;
+    width: 74px;
+    height: 74px;
 }
 
 .hr-medal
 {
-    background: url(hr.jpg) no-repeat center left;
+    background-position: -48px -40px;
+}
+
+.key
+{
+    background: url(key.png) no-repeat center left;
+
+    display: inline-block;
+
+    width: 20px;
+    height: 20px;
+
+    background-position: 0px 3px;
+    background-size: contain;
 }
