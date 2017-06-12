@@ -34,3 +34,28 @@
 {
     margin-bottom: 10px;
 }
+
+.structure
+{
+    background: url(structure.jpg) no-repeat center;
+
+    display: none;
+
+    width: 70%;
+    background-size: contain;
+
+    margin: 0 auto;
+    height: 450px;
+    margin-bottom: 70px;
+}
+
+.structure-link
+{
+    text-decoration: underline;
+    color: darkblue;
+}
+
+a
+{
+    color: darkblue;
+}

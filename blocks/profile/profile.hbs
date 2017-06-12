@@ -3,6 +3,29 @@
         <div class="photo"></div>
         <button class="send-letter">Отправить письмо</button>
         <div class="calendar"></div>
+        <div class="calendar-big">
+            <div class="close-button"></div>
+            <div class="calendar-big__img"></div>
+            <div class="calendar-big__text">
+                <label for="invisible-reason">Отсутствие</label>
+                <select id="invisible-reason" name="invisible">
+                    <option>По болезни</option>
+                    <option>Отпуск</option>
+                    <option>Командировка</option>
+                    <option selected>Обучение</option>
+                </select>
+                <div class="invisible-date">
+                    <label class="invisible-date__title" for="invisible-date">Даты</label>
+                    <input class="invisible-date__before" name="date-before" value="С" placeholder="С">
+                    -
+                    <input class="invisible-date__after" name="date-after" value="По" placeholder="По">
+                </div>
+                <button class="invisible-submit" type="submit">Отправить</button>
+            </div>
+            <div class="calendar-thanks">
+                Ваше письмо отправлено в отдел кадров и руководителю отдела продаж
+            </div>
+        </div>
     </div>
     <div class="column central-column">
         <div class="name"><h1>Смирнова Мария Ивановна</h1></div>
