@@ -1,0 +1,125 @@
+.post
+{
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+    padding: 10px;
+    margin-right: 10px;
+    margin-bottom: 20px;
+}
+
+.post-wrapper
+{
+    position: relative;
+    display: flex;
+}
+
+.photo
+{
+    display: inline-block;
+    position: absolute;
+
+    width: 161px;
+    height: 51px;
+
+    background: url(../profile/avatar.jpg) no-repeat center left;
+    background-size: cover;
+}
+
+.post-wrapper h4,
+.post-wrapper h5
+{
+    margin: 0;
+}
+
+.photo-man
+{
+    background-position: -106px -81px;
+}
+
+.photo-woman
+{
+    background-position: -106px -15px;
+}
+
+.man,
+.date
+{
+    margin-left: 62px;
+}
+
+.likes-img,
+.dislikes-img
+{
+    background: url(../spritesheet.png) no-repeat center left;
+
+    display: inline-block;
+
+    height: 25px;
+    width: 25px;
+}
+
+.likes-img
+{
+    background-position: -41px -72px;
+}
+
+.dislikes-img
+{
+    background-position: -1px -31px;
+}
+
+.likes .heart-text,
+.dislikes .heart-text
+{
+    display: inline-block;
+    position: relative;
+    top: -5px;
+
+    margin: 0;
+}
+
+.likes,
+.dislikes
+{
+    margin-right: 10px;
+}
+
+.post .left
+{
+    border-right: 1px solid;
+    display: inline-block;
+    padding: 10px;
+
+    flex-basis: 30%;
+}
+
+.post .left-woman
+{
+    flex-basis: 45%;
+}
+
+.question
+{
+    display: inline-block;
+    vertical-align: top;
+    padding-left: 10px;
+}
+
+.post .right
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    margin-right: 10px;
+}
+
+.post .right .comments a
+{
+    vertical-align: sub;
+}
+
+.post .right .stat
+{
+    display: flex;
+    align-self: flex-end;
+}

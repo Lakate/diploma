@@ -1,3 +1,5 @@
+@import "../post/post.css";
+
 #rel
 {
     border-bottom: 1px solid red;
@@ -22,10 +24,10 @@
 .blog-new-post
 {
     width: 90%;
-    margin: 50px auto;
+    margin: 50px auto 70px;
 }
 
-.question
+.blog-new-post .question
 {
     display: flex;
     justify-content: center;
@@ -46,7 +48,7 @@
     margin-left: 40px;
 }
 
-.text
+.blog-new-post .question .text
 {
     height: 200px;
     margin-left: 30px;

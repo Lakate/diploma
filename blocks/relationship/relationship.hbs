@@ -1,26 +1,21 @@
 <div class="rel">
-    <div class="rel-menu">
-        <div class="blog-button">Блог</div>
-        <div class="button">Вопрос-ответ</div>
-    </div>
     <div class="blog">
         <div class="blog-menu">
-            <div class="button">Последние</div>
             <div class="button">Популярные</div>
-            <div class="new-post-button">Предложить новость</div>
+            <div class="button">Последние</div>
+            <div class="new-post-button">Предложить вопрос</div>
+        </div>
+        <div class="latest-posts">
+             {{> post/post }}
         </div>
         <form class="blog-new-post">
             <div class="question">
-                <label for="title">Название</label>
-                <input class="title" name="title" value="Место проведения корпоратива" maxlength="200">
-            </div>
-            <div class="question">
-                <label for="theme">Тема</label>
-                <input class="theme" name="theme" value="Новогодний корпоратив" maxlength="200">
+                <label for="title">От кого</label>
+                <input class="title" name="title" value="Смирнова Мария Ивановна" maxlength="200">
             </div>
             <div class="question">
                 <label for="text">Текст</label>
-                <textarea class="text" name="text" value="Ваш гениальный пост.."></textarea>
+                <textarea class="text" name="text" value="Ваш гениальный вопрос.."></textarea>
             </div>
             <button class="send-post" type="submit" disabled>Опубликовать</button>
         </form>

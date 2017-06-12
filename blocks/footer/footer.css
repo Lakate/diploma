@@ -37,3 +37,8 @@
     width: 100%;
     background: url("./mail.png") no-repeat center right;
 }
+
+.footer__text .text
+{
+    margin: 5px;
+}

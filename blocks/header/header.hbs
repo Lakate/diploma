@@ -5,16 +5,34 @@
                 <ul class="nav-menu-list">
                     <li><div class="header-logo"></div></li>
                     <li><a id="main" href="/">Главная</a></li>
-                    <li><a id="companies" href="/companies">Компании</a></li>
-                    <li><a id="rel" href="/rel">Общение</a></li>
+                    <li class="companies">
+                        <div class="companies-menu-trigger"><a id="companies" href="/companies">Компании</a></div>
+                        <div class="companies-menu">
+                            <a href="/companies">ООО "Кортен"</a>
+                            <a href="/companies">ООО «Регинас»</a>
+                            <a href="/companies">ООО «Ар Джи Моторс»</a>
+                            <a href="/companies">ООО «Истен Моторс»</a>
+                            <a href="/companies">ООО «Яромир Авто»</a>
+                            <a href="/companies">ООО «Оптим Авто»</a>
+                            <a href="/companies">ООО «Торрес Моторс»</a>
+                            <a href="/companies">ООО «РАДА АВТО»</a>
+                            <a href="/companies">ООО «Кайсия»</a>
+                            <a href="/companies">ООО «РеМаг 2»</a>
+                            <a href="/companies">ООО «Автокомплекс «Регинас»</a>
+                            <a href="/companies">ООО «Автокомплекс Регинас г. Магнитогорск»</a>
+                        </div>
+                    </li>
+                    <li><a id="rel" href="/rel">Вопрос-ответ</a></li>
                     <li><a id="hr" href="/hr">HR-сервисы</a></li>
                     <li><a id="profile" href="/profile">Мой профиль</a></li>
                     <li>
                         <div class="quest-search">
                             <form class="quest-search__form" method="get" action="/search">
                                 {{#if query}}
-                                <input name="query" class="quest-search__input noSwipe" placeholder="Поиск" value="{{query}}" required>                                {{else}}
-                                <input name="query" class="quest-search__input noSwipe" placeholder="Поиск" required> {{/if}}
+                                    <input name="query" class="quest-search__input noSwipe" placeholder="Поиск" value="{{query}}" required>
+                                {{else}}
+                                    <input name="query" class="quest-search__input noSwipe" placeholder="Поиск" required>
+                                {{/if}}
                                 <button class="btn btn-xs btn-default quest-search__submit">&#128270;</button>
                             </form>
                         </div>
