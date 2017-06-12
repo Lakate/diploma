@@ -54,8 +54,8 @@ app.use((req, res, next) => {
             host: req.get('host')
         }),
         common: startBlocksData,
-        publicHost: '',
-            // (argv.NODE_ENV === 'development') ? '' : '//diploma.surge.sh',
+        publicHost: '//diploma.surge.sh',
+        // argv.NODE_ENV === 'development' ? '//diploma.surge.sh' : '',
         errors: []
     };
     next();

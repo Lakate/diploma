@@ -1,6 +1,6 @@
 {{#extend "base"}}
     {{#content "head" mode="append"}}
-        <link rel="stylesheet" href="/relationship.css">
+        <link rel="stylesheet" href="{{publicHost}}/relationship.css">
     {{/content}}
 
     {{#content "body"}}
@@ -8,6 +8,6 @@
     {{/content}}
 
     {{#content "scripts" mode="append"}}
-        <script src="/relationship.js"></script>
+        <script src="{{publicHost}}/relationship.js"></script>
     {{/content}}
 {{/extend}}

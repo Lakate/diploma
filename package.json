@@ -7,17 +7,9 @@
     "build": "webpack",
     "build:dev": "webpack --config webpack.dev.config.js",
     "deploy:dynamic": "git push heroku master",
-    "deploy:static": "surge -p ./public -d hackathonteam2.surge.sh",
+    "deploy:static": "surge -p ./public -d diploma.surge.sh",
     "deploy": "npm-run-all deploy:*",
     "dev": "webpack --config webpack.dev.config.js && npm run start:dev",
-    "env:auth0": "heroku config:get AUTH0_CLIENTSECRET --app yahackteam2 -s > config/auth.txt",
-    "env:cloudinary": "heroku config:get CLOUDINARY_URL --app yahackteam2 -s > config/cloudinary.txt",
-    "env": "npm-run-all env:*",
-    "filldb": "node --harmony scripts/fillDB.js",
-    "lint": "npm run lint:css & npm run lint:js",
-    "lint:css": "stylelint **/*.css",
-    "lint:js": "jscs .",
-    "precommit": "npm run test & npm run lint",
     "start": "node --harmony app.js",
     "start:dev": "node --harmony app.js --NODE_ENV=development",
     "test": "mocha --harmony --recursive tests/ --STATUS=testing"
@@ -55,6 +47,10 @@
     "path": "^0.12.7",
     "postcss-loader": "^2.0.5",
     "style-loader": "^0.18.1",
+    "surge": "^0.19.0",
     "webpack": "^2.6.1"
+  },
+  "engines": {
+    "node": "4.4.0"
   }
 }

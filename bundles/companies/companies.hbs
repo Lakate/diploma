@@ -1,6 +1,6 @@
 {{#extend "base"}}
     {{#content "head" mode="append"}}
-        <link rel="stylesheet" href="/companies.css">
+        <link rel="stylesheet" href="{{publicHost}}/companies.css">
     {{/content}}
 
     {{#content "body"}}
@@ -8,6 +8,6 @@
     {{/content}}
 
     {{#content "scripts" mode="append"}}
-        <script src="/companies.js"></script>
+        <script src="{{publicHost}}/companies.js"></script>
     {{/content}}
 {{/extend}}

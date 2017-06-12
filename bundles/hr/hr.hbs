@@ -1,6 +1,6 @@
 {{#extend "base"}}
     {{#content "head" mode="append"}}
-        <link rel="stylesheet" href="/hr.css">
+        <link rel="stylesheet" href="{{publicHost}}/hr.css">
     {{/content}}
 
     {{#content "body"}}
@@ -8,6 +8,6 @@
     {{/content}}
 
     {{#content "scripts" mode="append"}}
-        <script src="/hr.js"></script>
+        <script src="{{publicHost}}/hr.js"></script>
     {{/content}}
 {{/extend}}
